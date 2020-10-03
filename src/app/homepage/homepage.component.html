@@ -1,0 +1,95 @@
+<div class="cleanLocale_homepage row">
+    <section class="col cleanLocale_main">
+        <div class="cleanLocale_banner">
+            <!-- <h4>Too lazy to get your Bikes/Cars washed at washing center?</h4> -->
+            <h4 class="cleanLocale head">
+                Get your Bikes/Cars cleaned at your doorstep!
+            </h4>
+            <p class="cleanLocale para">Quick | Affordable | Trusted</p>
+        </div>
+        <div class="cleanLocale_schedule">
+            <div class="scheduler">
+                <!-- <label>Name :</label>
+                <input type="text" placeholder="Enter name" [(ngModel)]="name" />
+                <label>Contact :</label>
+                <input type="number" placeholder="Enter phone number" [(ngModel)]="phone" />
+                <label>Email id :</label>
+                <input type="email" placeholder="Enter email id" [(ngModel)]="mail" /> -->
+                <label><i class="fas fa-city"></i>City : </label>
+                <select name="cleanType" id="city" [(ngModel)]="cityVal">
+                    <option *ngFor="let c of city" [ngValue]="c.name">
+                        {{c.name}}
+                    </option>
+                </select>
+                <label><i class="fas fa-users-cog"></i>Service Type :</label>
+                <select name="cleanType" id="clean_type" [(ngModel)]="purpose">
+                    <option [ngValue]="null" disabled selected>Choose Service
+                    </option>
+                    <option *ngFor="let c of cleanType" [ngValue]="c">
+                        {{c.name}}
+                    </option>
+                </select>
+                <label><i class="fas fa-people-carry"></i>Plan :</label>
+                <select name="cleanType" id="clean_type" [(ngModel)]="plan">
+                    <option [ngValue]="null" disabled selected>Choose Plan
+                    </option>
+                    <option *ngFor="let p of planDetails" [ngValue]="p">
+                        {{p.name}}
+                    </option>
+                </select>
+                <div class="schedule_slot">
+                    <!-- <input [ngxTimepicker]="picker">
+                    <ngx-material-timepicker #picker></ngx-material-timepicker> -->
+                    <label><i class="fas fa-clock"></i>Slot (8 A.M. to 7 P.M.) :</label>
+                    <input [owlDateTime]="dt1" [owlDateTimeTrigger]="dt1" [(ngModel)]="slotTime"
+                        placeholder="Choose Date & Time">
+                    <owl-date-time #dt1></owl-date-time>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="submit_btn">
+                    <button class="btn btn-primary" (click)="navigateTo()">Proceed</button>
+                </div>
+            </div>
+        </div>
+        <div class="cleanLocale_second">
+            <h4>Our services:</h4>
+            <div class="cleanLocale_plans">
+                <div class="cards col">
+                    <h6><i class="fas fa-motorcycle"></i>Bike cleaning</h6>
+                    <p>1) Bike cleaning with clean cloth.</p>
+                    <p>2) Water + shampoo spriknling on bike.</p>
+                    <p>3) Rubbing with cloth.</p>
+                    <p>4) Cleaning with water.</p>
+                    <p>5) Rubbing with dry cloth.</p>
+                    <p>6) Polish.</p>
+                </div>
+                <div class="cards col">
+                    <h6><i class="fas fa-car-side"></i>Car cleaning basic</h6>
+                    <p>1) Car cleaning with clean cloth.</p>
+                    <p>2) Water + shampoo spriknling on car.</p>
+                    <p>3) Rubbing with cloth.</p>
+                    <p>4) Cleaning with water.</p>
+                    <p>5) Rubbing with dry cloth.</p>
+                </div>
+                <div class="cards col">
+                    <h6><i class="fas fa-car-side"></i>Car cleaning + Polish</h6>
+                    <p>1) Car cleaning with clean cloth.</p>
+                    <p>2) Water + shampoo spriknling on car.</p>
+                    <p>3) Rubbing with cloth.</p>
+                    <p>4) Cleaning with water.</p>
+                    <p>5) Rubbing with dry cloth.</p>
+                    <p>6) Polish.</p>
+                </div>
+                <div class="cards col">
+                    <h6><i class="fas fa-car-side"></i>Car cleaning + Polish + Interior</h6>
+                    <p>1) Car cleaning with clean cloth.</p>
+                    <p>2) Water + shampoo spriknling on car.</p>
+                    <p>3) Rubbing with cloth.</p>
+                    <p>4) Cleaning with water.</p>
+                    <p>5) Rubbing with dry cloth.</p>
+                    <p>6) Interior cleaning with blower and polish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

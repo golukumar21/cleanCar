@@ -1,0 +1,29 @@
+.header {
+    overflow: hidden;
+    // background-color: #0071C5;
+    background-image: linear-gradient(to left, transparent, #0071cb);
+    background-position: center;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.15);
+    z-index: 1000;
+    a {
+        &.cleanLocale {
+            text-decoration: none;
+        }
+        color: #ffffff;
+        h3 {
+            padding: 0px 10px 0px 10px;
+        }
+    }
+    .nav_ele {
+        display: flex;
+        flex: 1;
+        padding-top: 10px;
+        & > a {
+            margin: 0px 15px;
+            cursor: pointer;
+            & > h6 {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

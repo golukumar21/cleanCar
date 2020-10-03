@@ -1,0 +1,9 @@
+.cleanLocale_schedule{
+    .cleanLocale_schedule_main {
+        background-image: url('../../assets/schedule.jpg');
+        background-size: cover;
+        height: calc(100vh - 7vh);
+        display: flex;
+        flex-direction: column;
+    }
+}

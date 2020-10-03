@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+@import 'sweetalert2/src/sweetalert2.scss';
+
+button.btn {
+    outline: 0;
+    border: 0;
+    box-shadow: none !important;
+}
+
+select, input {
+    width: 100%;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 4px 4px -2px rgb(173 173 173 / 75);
+    border: 1px solid #4e4e4e;
+}
+
+label {
+    font-weight: 500;
+}
