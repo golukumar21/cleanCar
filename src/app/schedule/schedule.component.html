@@ -1,11 +1,40 @@
 <div class="cleanLocale_schedule row">
-    <section class="col cleanLocale_schedule_main">
+    <section class="col-xl-12 cleanLocale_schedule_main">
         <div class="cleanLocale_banner">
             <!-- <h4>Too lazy to get your Bikes/Cars washed at washing center?</h4> -->
-            <h4 class="cleanLocale head">
-               Schedule Cleaning
-            </h4>
-
+            <h4 class="cleanLocale head">Schedule Cleaning</h4>
+            <h6>Type: {{type}}</h6>
+            <h6>Slot: {{slot}}</h6>
+            <div class="scheduler">
+                <form>
+                    <span class="reschedule">
+                        <a routerLink="/" routerLinkActive="active" class="cleanLocale_link">Reschedule?</a>
+                    </span>
+                    <div class="field_ctrl name">
+                        <label>Name :</label>
+                        <input type="text" placeholder="Enter you name here" />
+                    </div>
+                    <div class="field_ctrl address">
+                        <label>Address Line 1 :</label>
+                        <textarea type="text" placeholder="Enter you address here"></textarea>
+                    </div>
+                    <div class="field_ctrl address2">
+                        <label>Address Line 2 :</label>
+                        <textarea type="text" placeholder="Enter you address here"></textarea>
+                    </div>
+                    <div class="field_ctrl email">
+                        <label>Email Id :</label>
+                        <input type="email" placeholder="Enter you email-id here" />
+                    </div>
+                    <div class="field_ctrl contact">
+                        <label>Contact :</label>
+                        <input type="number" (keydown)="prevent($event)" placeholder="Enter you phone number here" />
+                    </div>
+                    <div class="field_ctrl submit">
+                        <button class="btn btn-primary" (click)="schedule()">Schedule</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 </div>

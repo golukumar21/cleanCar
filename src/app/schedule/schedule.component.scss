@@ -1,4 +1,4 @@
-.cleanLocale_schedule{
+.cleanLocale_schedule {
     .cleanLocale_schedule_main {
         background-image: url('../../assets/schedule.jpg');
         background-size: cover;
@@ -6,4 +6,49 @@
         display: flex;
         flex-direction: column;
     }
+    .cleanLocale_banner {
+        display: flex;
+        flex-direction: column;
+        h4, h6 {
+            text-align: center;
+        }
+        .scheduler {
+            position: relative;
+            
+            margin-bottom: 40px;
+            display: flex;
+            
+            justify-content: center;
+            form {
+                background: #ffffff;
+                border: 1px solid #000000;
+                flex: 1 0 50%;
+                padding: 15px 20px;
+                border-radius: 15px;
+            }
+            .reschedule {
+                position: absolute;
+                top: 5px;
+                right: 15px;
+                font-weight: 500;
+            }
+            .field_ctrl {
+                label {
+                    margin: 10px 0px 0px 0px;
+                }
+                input {
+                    padding: 5px;
+                }
+            }
+            .submit {
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
+    }
 }
+
+// @media only screen and (max-width: 600px) {
+    
+//   }
+// }

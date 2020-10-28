@@ -27,13 +27,13 @@ export class HomepageComponent implements OnInit {
     'value': 1
   }];
   planDetails: any = [{
-    'name': 'Car cleaning basic',
+    'name': 'Car cleaning',
     'value': 1
   },{
-    'name': 'Car cleaning + Polishing',
+    'name': 'Car cleaning + polishing',
     'value': 2
   },{
-    'name': 'Car cleaning + Polishing + Interior',
+    'name': 'Car cleaning + polishing + interior',
     'value': 3
   }];
   cityVal: any;
